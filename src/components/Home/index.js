@@ -2,19 +2,23 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
-import LogoTitle from '../../assets/images/logo-s.png'
+import LogoTitle from '../../assets/images/anand.png'
 import Logo from './Logo'
 import './index.scss'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-  const nameArray = ['l', 'o', 'b', 'o', 'd', 'a', 'n']
+  const nameArray = ['A', 'n', 'a', 'n', 'd']
   const jobArray = [
-    'w',
-    'e',
-    'b',
-    ' ',
+    'A',
+    'n',
+    'd',
+    'r',
+    'o',
+    'i',
+    'd',
+    '',
     'd',
     'e',
     'v',
@@ -25,6 +29,8 @@ const Home = () => {
     'e',
     'r',
     '.',
+ 
+  
   ]
 
   useEffect(() => {
@@ -59,12 +65,12 @@ const Home = () => {
               idx={22}
             />
           </h1>
-          <h2>Front End Developer / JavaScript Expert / Youtuber</h2>
+          <h2>Android Developer / Front End Expert </h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
         </div>
-        <Logo />
+        <Logo/>
       </div>
 
       <Loader type="pacman" />
